@@ -4,7 +4,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 
 /**
- * Created by Lenovo on 29-08-2017.
+ * Created by Allan on 29-08-2017.
  */
 
 public class FragmentPagerAdapter extends android.support.v4.app.FragmentPagerAdapter {
@@ -21,13 +21,15 @@ public class FragmentPagerAdapter extends android.support.v4.app.FragmentPagerAd
                     return userFragment;
             case 1: ForumFragment forumFragment = new ForumFragment();
                     return forumFragment;
+            case 2: TrendingFragment trendingFragment = new TrendingFragment();
+                    return trendingFragment;
         }
         return null;
     }
 
     @Override
     public int getCount() {
-        return 2;
+        return 3;
     }
 
     @Override
@@ -35,6 +37,7 @@ public class FragmentPagerAdapter extends android.support.v4.app.FragmentPagerAd
         switch (position) {
             case 0: return "FAQs";
             case 1: return "FORUM";
+            case 2:return "TRENDING";
         }
         return super.getPageTitle(position);
     }
