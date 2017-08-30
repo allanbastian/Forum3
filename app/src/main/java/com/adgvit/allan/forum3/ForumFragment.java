@@ -27,7 +27,6 @@ public class ForumFragment extends Fragment {
         adapter = new ForumRecyclerAdapter(getActivity(), getData());
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setAdapter(adapter);
-        // Inflate the layout for this fragment
         return rootView;
     }
 

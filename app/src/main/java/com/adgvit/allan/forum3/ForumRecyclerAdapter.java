@@ -1,6 +1,7 @@
 package com.adgvit.allan.forum3;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -54,7 +55,7 @@ public class ForumRecyclerAdapter extends RecyclerView.Adapter<ForumRecyclerAdap
             super(itemView);
             cardView = (CardView) itemView.findViewById(R.id.card);
             doubt = (TextView) itemView.findViewById(R.id.ques);
-            upVote = (ImageButton) itemView.findViewById(R.id.upVote);
+                upVote = (ImageButton) itemView.findViewById(R.id.upVote);
         }
     }
 }
